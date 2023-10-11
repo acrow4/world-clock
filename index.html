@@ -7,8 +7,27 @@
     <title>World Clock</title>
   </head>
   <body>
-    <h1>World Clock</h1>
-    <script src="javascript/index.js"></script>
+    <div class="container">
+      <h1>World Clock</h1>
+
+      <select>
+        <option value="">Select a city...</option>
+        <option value="">New York</option>
+        <option value="">London</option>
+        <option value="">Berlin</option>
+      </select>
+
+      <div class="city">
+        <h2>Paris 🇫🇷</h2>
+        <div>October 11th 2023</div>
+        <div>4:03:15 AM</div>
+      </div>
+      <div class="city">
+        <h2>Los Angeles 🇺🇸</h2>
+        <div>October 10th 2023</div>
+        <div>7:03:15 PM</div>
+      </div>
+    </div>
     <footer>
       This project was coded by
       <a
@@ -19,5 +38,6 @@
       and is on GitHub
       <a href="https://github.com/acrow4/world-clock" target="_blank">here</a>.
     </footer>
+    <script src="javascript/index.js"></script>
   </body>
 </html>
