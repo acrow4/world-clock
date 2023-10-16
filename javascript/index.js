@@ -19,6 +19,16 @@ function updateTime() {
     losAngelesTimeElement.innerHTML = losAngelesTime.format(
       "hh:mm:ss [<small>]A[</small>]"
     );
+
+    let seoulElement = document.querySelector("#seoul");
+    let seoulDateElement = seoulElement.querySelector(".date");
+    let seoulTimeElement = seoulElement.querySelector(".time");
+    let seoulTime = moment().tz("Asia/Seoul");
+
+    seoulDateElement.innerHTML = seoulTime.format("MMMM Do YYYY");
+    seoulTimeElement.innerHTML = seoulTime.format(
+      "hh:mm:ss [<small>]A[</small>]"
+    );
   }
 }
 
